@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Distrito_Logo_Blanco.png">
+    <title>Distrito 4</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/4eaf5ae8f2.js" crossorigin="anonymous"></script> 
+
+</head>
+<body>
+
+    <!-- Inicio del menu -->
+    <header>
+        <img class="logo" src="img/Distrito_Logo_Blanco.png" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#equipos">EQUIPOS</a></li>
+                <li><a href="#cabinas">CABINAS</a></li>
+                <li><a href="#sonido">SONIDO</a></li>
+                <li><a href="#requisitos">REQUISITOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="home" id="home">
+        
+        <div>
+            <h1 class="titulo">ALQUILER DE CABINAS Y SONIDO PARA EVENTOS</h1>
+            <p class="subtitulo">Distrito 4</p>
+        </div>
+
+        <i class="icono bi-arrow-down"></i>
+
+    </div>
+    
+
+
+
+    <!-- NOSOTROS -->
+    <div class="nosotros" id="nosotros">
+
+        <h1> <i class="bi bi-chevron-compact-left"></i> NOSOTROS <i class="bi bi-chevron-compact-right"></i> </h1>
+        <p>Nosotros somos DJs. Entendemos perfectamente la necesidad de un equipamiento
+            de primer nivel como herramienta fundamental. Trabajamos con las mejores marcas del mercado
+            y prestamos asesoramiento para el armado integral de cualquier evento. A continuación te 
+            presentamos toda nuestra infraestructura de cabinas profesionales, monitores, sonido e 
+            iluminación a la disposición de tu próxima fiesta. No dudes en consultarnos.  
+        </p>
+
+    </div>
+
+
+
+
+    <!-- EQUIPOS -->
+    <div class="equipos" id="equipos">
+
+        <h1> <i class="bi bi-chevron-compact-left"></i> EQUIPOS <i class="bi bi-chevron-compact-right"></i> </h1>
+
+        <div class="cuerpo">
+            <div class="contenedor" id="contenedor">
+                <div class="mostrar" id="productos">
+                    <img src="img/pioneer-3000-nxs2.png" alt="Pioneer CDJ 3000 Nexus 2">
+                    <div class="informacion">
+                        <p class="titulo">Pioneer CDJ 3000 Nexus 2</p>
+                        <p class="precio">Precio: $30.000 el par</p>      
+                        <button onclick="agregarProducto('Producto Pioneer CDJ 3000 Nexus 2', 30000)">RESERVAR</button>   
+                    </div>
+                </div>
+
+
+                <div class="mostrar" id="productos">
+                    <img src="img/pioneer-djm-900-nxs2.png" alt="Pioneer DJM 900 Nexus 2">
+                    <div class="informacion">
+                        <p class="titulo">Pioneer DJM 900 Nexus 2</p>
+                        <p class="precio">Precio: $20.000</p>        
+                        <button onclick="agregarProducto('Producto Pioneer DJM 900 Nexus 2', 20000)">RESERVAR</button>       
+                    </div>
+                </div>
+
+
+                <div class="mostrar" id="productos">
+                    <img src="img/pioneer-xdj-rx3.png" alt="Pioneer XDJ RX3">
+                    <div class="informacion">
+                        <p class="titulo">Pioneer XDJ RX3</p>
+                        <p class="precio">Precio: $20.000</p>        
+                        <button onclick="agregarProducto('Producto Pioneer XDJ RX3', 20000)">RESERVAR</button>       
+                    </div>
+                </div>
+
+
+                <div class="mostrar" id="productos">
+                    <img src="img/4xlado-das.png" alt="Parlante DAS">
+                    <div class="informacion">
+                        <p class="titulo">Parlante "DAS"</p>
+                        <p class="precio">Precio: $20.000 (unidad)</p>       
+                        <button onclick="agregarProducto('Producto Parlante DAS', 20000)">RESERVAR</button>        
+                    </div>
+                </div>
+
+
+                <div class="mostrar" id="productos">
+                    <img src="img/graves-das.png" alt="Grave DAS">
+                    <div class="informacion">
+                        <p class="titulo">Grave "DAS"</p>
+                        <p class="precio">Precio: $20.000 (unidad)</p>       
+                        <button onclick="agregarProducto('Producto Grave DAS', 20000)">RESERVAR</button>        
+                    </div>
+                </div>
+
+
+                <div class="mostrar" id="productos">
+                    <img src="img/cabezal-movil-removebg-preview.png" alt="cabezal-movil">
+                    <div class="informacion">
+                        <p class="titulo">Cabezal móvil 7R</p>
+                        <p class="precio">Precio: $15.000 (unidad)</p>         
+                        <button onclick="agregarProducto('Producto Cabezal móvil 7R', 15000)">RESERVAR</button>      
+                    </div>
+                </div>
+
+
+                <div class="mostrar" id="productos">
+                    <img src="img/stormer-removebg-preview.png" alt="stormer">
+                    <div class="informacion">
+                        <p class="titulo">Stormer RGB</p>
+                        <p class="precio">Precio: $8.000 (unidad)</p>       
+                        <button onclick="agregarProducto('Producto Stormer RGB', 8000)">RESERVAR</button>        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- SET DE CABINAS -->
+    <div class="set" id="cabinas">
+
+        <div>
+            <h1> <i class="bi bi-chevron-compact-left"></i> SET DE CABINAS <i class="bi bi-chevron-compact-right"></i> </h1>
+        </div>
+
+
+        <div class="set-cabinas">
+            <div class="cabina" id="productos">
+                <h1>CABINA 3000</h1>
+                <img src="img/cabina.png">
+                <p class="precio">$45.000/día</p>
+                <div class="descripcion">
+                    <p>CDJ 3000 x 2u</p>
+                    <p>Pioneer DJM 900 Nexus 2</p>
+                </div>
+                <button onclick="agregarProducto('Producto CABINA 3000', 45000)">RESERVAR</button>
+            </div>
+
+
+            <div class="cabina" id="productos">
+                <h1>CABINA 3000 2</h1>
+                <img src="img/cabina.png">
+                <p class="precio">$40.000/día</p>
+                <div class="descripcion">
+                    <p>CDJ 3000 x 2u</p>
+                    <p>Pioneer DJM 900 Nexus 2</p>
+                </div>
+                <button onclick="agregarProducto('Producto CABINA 3000 2', 40000)">RESERVAR</button>
+            </div>
+
+
+            <div class="cabina" id="productos">
+                <h1>CABINA NXS II</h1>
+                <img src="img/cabina.png">
+                <p class="precio">$35.000/día</p>
+                <div class="descripcion">
+                    <p>CDJ 2000 Nexus 2 x 2u</p>
+                    <p>Pioneer DJM 900 Nexus 2</p>
+                </div>
+                <button onclick="agregarProducto('Producto CABINA NEXUS 2', 35000)">RESERVAR</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- SET DE SONIDO -->
+    <div class="sonido" id="sonido">
+
+        <div>
+            <h1> <i class="bi bi-chevron-compact-left"></i> SET DE SONIDO <i class="bi bi-chevron-compact-right"></i> </h1>
+        </div>
+
+
+        <div class="set-sonido">
+            <div class="sonidos" id="productos">
+                <h1>COMBO X2</h1>
+                <img src="img/combo-parlante.png">
+                <p class="precio">$60.000/día</p>
+                <div class="descripcion">
+                    <p>2 X LADO</p>
+                    <p>MARCA "DAS"</p>
+                </div>
+                <button onclick="agregarProducto('Producto COMBO X2', 60000)">RESERVAR</button>
+            </div>
+
+            <div class="sonidos" id="productos">
+                <h1>COMBO X4</h1>
+                <img src="img/sonido-combo_x4.png">
+                <p class="precio">$100.000/día</p>
+                <div class="descripcion">
+                    <p>4 X LADO</p>
+                    <p>MARCA "DAS"</p>
+                </div>
+                <button onclick="agregarProducto('Producto Pioneer XDJ RX3', 100000)">RESERVAR</button>
+            </div>
+
+
+            <div class="sonidos" id="productos">
+                <h1>COMBO SUB</h1>
+                <img src="img/combo-parlante-grave.png">
+                <p class="precio">$150.000/día</p>
+                <div class="descripcion">
+                    <p>2 PARLANTES X LADO + 2 SUB GRAVES</p>
+                    <p>MARCA "DAS"</p>
+                </div>
+                <button onclick="agregarProducto('Producto COMBO SUB', 150000)">RESERVAR</button>
+            </div>
+
+
+            <div class="sonidos" id="productos">
+                <h1>COMBO SUB X4</h1>
+                <img src="img/sonido-combo_standard_plus.png">
+                <p class="precio">$200.000/día</p>
+                <div class="descripcion">
+                    <p>4 PARLANTES X LADO + 4 SUB GRAVES</p>
+                    <p>MARCA "DAS"</p>
+                </div>
+                <button onclick="agregarProducto('Producto COMBO SUB X4', 200000)">RESERVAR</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="carrito" class="finalizarCompra">
+        <h2>Finalizar compras</h2>
+        <ul id="carrito-lista"></ul>
+
+
+        <button onclick="finalizarCompra()">Finalizar Reserva</button>
+    </div>
+
+
+
+
+    <!-- REQUISITOS -->
+    <div class="requisitos" id="requisitos">
+
+        <h1 class="requisitos-titulo"> <i class="bi bi-chevron-compact-left"></i> REQUISITOS <i class="bi bi-chevron-compact-right"></i> </h1>
+        
+
+        <div class="requisitos-normas">
+            <div class="normas">
+                <p><div class="numero">1.</div>Todos los equipos de Distrito 4 ®
+                    son entregados en nuestra productora en "Zoco" en los horarios coordinados 
+                    de forma telefónica con cada alquiler.</p>
+            </div>
+            
+            <div class="normas">
+                <p class="normas"><div class="numero">2.</div>Todos los equipos se retiran con
+                    firma de documentación legal en garantía bajo responsabilidad TOTAL,
+                    PLENA y ABSOLUTA del firmante.</p>
+            </div>
+
+            <div class="normas">
+                <p class="normas"><div class="numero">3.</div>El firmante de la documentación
+                    pasa a ser Garante legal por el buen uso y devolución en tiempo y forma de
+                    los equipos rentados.</p>
+            </div>
+
+            <div class="normas">
+                <p class="normas"><div class="numero">4.</div>El garante deberá presentar SIN EXCEPCIÓN: <br>
+                    A- DNI original (se hará una copia que queda con la ficha del alquiler) <br>
+                    B- Cédula verde de un vehículo a su nombre o un recibo de 
+                        sueldo actualizado a su nombre. (Se hará copia de cualquiera de los dos que queda con la ficha del alquiler).
+                        La cédula azul o de otra persona que no este presente NO es aceptada para la apertura de cuenta.</p>
+            </div>
+
+            <div class="normas">
+                <p class="normas"><div class="numero">5.</div>No es necesario que la
+                    misma persona que alquila sea el garante, puede venir con alguien al
+                    momento de retirar el equipamiento.</p>
+            </div>
+
+            <div class="normas">
+                <p class="normas"><div class="numero">6.</div>Todos los equipos son entregados
+                    con sus bolsos anvil originales y todos los cables necesarios de uso profesional.
+                    Bajo ningún caso se aceptara la devolución de cables o elementos que no sean
+                    provistos por Distrito 4® en el momento del alquiler.</p>
+            </div>
+
+            <div class="normas">
+                <p class="normas"><div class="numero">7.</div>Reservas telefónicas únicamente con numero de DNI.</p>
+            </div>
+
+            <div class="normas">
+                <p class="normas"><div class="numero">8.</div>Distrito 4® se reserva el
+                    derecho de aceptación de un alquiler cuando se considere que no están dadas las garantías para el uso del mismo.</p>
+            </div>
+
+            <div class="normas">
+                <p class="normas"><div class="numero">9.</div>El costo del alquiler de
+                    los equipos debe ser abonado al retiro de los mismos sin excepción.
+                    Solo trabajamos en EFECTIVO.</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <!-- CONTACTO -->
+    <div class="contacto" id="contacto">
+
+        <h1>CONTACTO</h1>
+
+        <div class="contacto-mensaje">
+            <p>Dejanos tu mensaje</p>
+
+            <input type="text" placeholder="Tu nombre">
+
+            <input type="text" placeholder="Tu email">
+
+            <textarea cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea>
+
+            <input class="envio" type="submit" value="ENVIAR">
+
+            <p>Muchas gracias!</p>
+
+            <img src="img/Distrito_Logo_Blanco.png">
+            <p>&copy All right reserved to Distrito 4 </p>
+        </div>
+
+        
+
+        
+    </div>
+
+
+
+
+
+
+    <script src="js/home.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,860 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin-top: 100px;
+}
+
+
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+  
+header.abajo {
+    background-color: #000;
+    transition: .1s;
+}
+
+.logo {
+  height: 80px;
+  margin-left: 100px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+.nav-list li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  font-family:'Montserrat', 'Arial Narrow';
+  text-transform: uppercase;
+}
+.nav-list li a:hover {
+  border-bottom: 1.5px solid white;
+  transition: 0.1s;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+  color: white;
+}
+
+
+
+/* HOME */
+.home {
+  height: 600px;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  background-image: url(../img/portada.jpeg);
+  background-color: rgb(33, 33, 33); 
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  object-fit: cover;
+}
+
+.home .img-home {
+    height: 600px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+
+
+.home h1 {
+    z-index: 50;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    font-size: 36px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    padding-top: 300px;
+}
+
+.home p {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+.icono {
+    display: flex;
+    height: 50px;
+    font-size: 20px;
+    justify-content: center;
+    background-repeat: repeat-y;
+    animation: movimiento-icono 2s linear infinite ;
+}
+
+@keyframes movimiento-icono {
+    0% { padding-top: 0;}
+    50% { padding-top: 20px;}
+    100%  { padding-top:0; }
+}
+
+
+
+
+/* NOSOTROS */
+.nosotros {
+    height: 500px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.nosotros h1 {
+    display: flex;
+    max-width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros h1 i {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.nosotros p {
+    max-width: 80%;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+/* EQUIPOS */
+.equipos {
+    max-width: 100%;
+    height: 1700px;
+    background-color: rgb(240, 240, 240);
+}
+
+.equipos h1 {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipos h1 i {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.cuerpo img {
+    height: 400px;
+    width: 400px;
+    object-fit: fill;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.contenedor > div {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: rgb(219, 219, 219);
+    border-radius: 20px;
+}
+
+.mostrar {
+    position: relative;
+    padding: 5px;
+}
+
+.mostrar:hover .informacion {
+    display: block;
+}
+
+.informacion {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, .8) ;
+    text-align: center;
+    padding: 15px;
+    height: 410px;
+    width: 410px;
+    border-radius: 20px;
+    color: white;
+}
+.informacion .titulo {
+    height: 180px;
+    width: 160px;
+    padding-top: 100px;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.informacion .precio {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.informacion button {
+    background-color: white;
+    margin-top: 20px;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(90, 90, 90);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+.informacion button:hover {
+    background-color: #000;
+    color: white;
+    transition: 0.3s;
+    width: 135px;
+    height: 45px;
+}
+
+.informacion input, .informacion button {
+    margin: 0 auto;
+}
+
+.informacion > p:first-child {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+
+
+/* SET */
+.set {
+    width: 100%;
+    height: 800px;
+}
+
+.set h1 {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.set h1 i {
+    margin-top: 5px;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.set-cabinas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.set .cabina {
+    height: 500px;
+    width: 400px;
+    border: 1px solid rgb(182, 182, 182);;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.set .cabina h1 {
+    height: 50px;
+    font-size: 20px;
+}
+
+.set .cabina img{
+    height: 250px;
+    width: 400px;
+}
+
+.set .precio {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.set .descripcion {
+    flex-direction: column;
+    text-align: center;
+}
+
+.set .cabina button {
+    background-color: black;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(90, 90, 90);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.set .cabina button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    width: 135px;
+    height: 45px;
+}
+
+
+
+
+
+
+
+
+/* SET DE SONIDO */
+.sonido {
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    height: 1300px;
+}
+
+.sonido h1 {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sonido h1 i {
+    margin-top: 5px;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.set-sonido {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.sonido .sonidos {
+    height: 500px;
+    width: 400px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.sonido .sonidos h1 {
+    height: 50px;
+    font-size: 20px;
+}
+
+.sonido .sonidos img{
+    height: 250px;
+    width: 400px;
+}
+
+.sonido .precio {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.sonido .descripcion {
+    flex-direction: column;
+    text-align: center;
+}
+
+.sonido .sonidos button {
+    background-color: black;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(90, 90, 90);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.sonido .sonidos button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    width: 135px;
+    height: 45px;
+}
+
+
+
+.finalizarCompra {
+    height: 200px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.finalizarCompra h2 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finalizarCompra button {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* REQUISITOS */
+.requisitos {
+    color: white;
+    height: 1100px;
+    background-color: rgb(82, 51, 127);
+}
+
+.requisitos h1 {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.requisitos h1 i {
+    margin-top: 5px;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.requisitos-normas {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.requisitos .requisitos-normas .normas {
+    display: flex;
+    align-items: center;
+}
+
+.requisitos .requisitos-normas .numero {
+    font-size: 60px;
+    padding: 0 10px;
+}
+
+.requisitos .requisitos-footer {
+    bottom: 0;
+    text-align: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+
+
+
+/* CONTACTO */
+.contacto {
+    color: white;
+    height: 1000px;
+    background-color: black;
+}
+
+.contacto h1 {
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-mensaje {
+    text-align: center;
+}
+
+.contacto-mensaje input {
+    margin: 20px auto;
+    width: 400px;
+    display: block;
+    height: 40px;
+}
+
+.contacto-mensaje textarea {
+    margin: 0 auto;
+    width: 500px;
+
+}
+
+.contacto-mensaje .envio {
+    width: 300px;
+    background-color: rgb(199, 199, 199);
+}
+
+.contacto .contacto-wpp {
+    margin: 0 auto ;
+    text-align: center;
+    font-size: 34px;
+    height: 200px;
+    width: 60%;
+}
+
+
+
+
+
+
+/* BOTON FLOTANTE */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+  }
+  
+  .float:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color: #fff;
+  }
+  
+  .my-float {
+    margin-top: 16px;
+  }
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+/* HEADER */
+header {
+  height: 150px;
+  max-width: 100%;
+  align-items: center;
+  background-color: black;
+}
+
+.logo img {
+  height: 150px;
+  width: 150px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  margin-right: 100px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: block;
+    margin-right: 30px;
+    border: 0;
+    font-size: 50px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.abrir-menu {
+    color: white;
+    margin-left: 100px;
+}
+
+.cerrar-menu {
+    color: #ececec;
+    font-size: 80px;
+}
+
+.abrir-menu i,
+.cerrar-menu i {
+  color: white;
+  font-size: 50px
+}
+  
+.nav {
+  z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list {
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.logo {
+    height: 50px;
+    margin-left: 0;
+  }
+
+
+/* EQUIPOS */
+.equipos {
+    max-width: 100%;
+    height: 3100px;
+    background-color: rgb(240, 240, 240);
+}
+
+
+.cuerpo img {
+    height: 350px;
+    width: 350px;
+    object-fit: fill;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.contenedor > div {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: rgb(219, 219, 219);
+    border-radius: 20px;
+}
+
+.mostrar {
+    position: relative;
+    padding: 5px;
+}
+
+.mostrar:hover .informacion {
+    display: block;
+}
+
+.informacion {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, .8) ;
+    text-align: center;
+    padding: 15px;
+    height: 360px;
+    width: 360px;
+    border-radius: 20px;
+    color: white;
+}
+
+
+/* SET */
+.set {
+    width: 100%;
+    height: 1900px;
+}
+
+.set .cabina {
+    height: 500px;
+    width: 350px;
+    border: 1px solid rgb(182, 182, 182);;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.set .cabina h1 {
+    height: 50px;
+    font-size: 20px;
+}
+
+.set .cabina img{
+    height: 250px;
+    width: 350px;
+}
+
+.set .precio {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.set .descripcion {
+    flex-direction: column;
+    text-align: center;
+}
+
+.set .cabina button {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0 auto;
+}
+
+.set .cabina button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.05);
+    transition: .1s;
+}
+
+
+
+/* SET DE SONIDO */
+.sonido {
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    height: 2500px;
+}
+
+.sonido h1 {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sonido h1 i {
+    margin-top: 5px;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.set-sonido {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.sonido .sonidos {
+    height: 500px;
+    width: 350px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+
+.sonido .sonidos img{
+    height: 250px;
+    width: 350px;
+}
+
+
+
+/* REQUISITOS */
+.requisitos {
+    height: 1700px;
+    background-color: rgb(191, 132, 255);
+}
+
+
+
+/* CONTACTO */
+.contacto-mensaje {
+    width: 100%;
+}
+.contacto-mensaje img { 
+    height: 150px;
+}
+
+}
